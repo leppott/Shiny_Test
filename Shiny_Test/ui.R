@@ -29,9 +29,16 @@ fluidPage(
         mainPanel(
             plotOutput("distPlot")
 
-            
-            
-            
+           , h2("Links to Files:") 
+          , p(a(href = url_txt, "TXT", target = "_blank"))
+          , p(a(href = url_csv, "CSV", target = "_blank"))
+          , p(a(href = url_zip, "ZIP", target = "_blank"))
+          , p(a(href = url_docx, "DOCX", target = "_blank"))
+          , p(a(href = url_xlsx, "XLSX", target = "_blank"))
+          , p(a(href = url_pdf, "PDF", target = "_blank"))
+          , p(a(href = url_png, "PNG", target = "_blank"))
+          , p("TXT, CSV, and PNG open in browser.")
+          , p("will have to save after open.")
         )
     )
 )
